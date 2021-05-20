@@ -1,17 +1,16 @@
 import './App.css';
+import Home from './components/Home';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="logo.png" alt="KKI-NY logo" />
-        <p>
-          KKI-NY website: WIP.<br />
-          Situs web untuk KKI-NY sedang dalam proses.
-        </p>
-        <a className="App-link" href="https://www.facebook.com/kkinewyork">Facebook</a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
