@@ -1,4 +1,5 @@
 import { Facebook, GitHub } from 'react-feather';
+import '../App.scss';
 
 function Footer() {
     return (
