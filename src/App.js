@@ -1,7 +1,8 @@
 import './App.scss';
 import Home from './components/Home';
-import NavBar from './components/NavBar';
+import About from './components/About';
 import Contact from './components/Contact';
+import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -11,6 +12,7 @@ function App() {
       <NavBar />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
         <Route exact path='/contact' component={Contact} />
       </Switch>
       <Footer />

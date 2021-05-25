@@ -1,6 +1,6 @@
 function Home() {
     return (
-      <div className="Home">
+      <div className="content">
           <img src="logo.png" alt="KKI-NY logo" />
           <p>
             KKI-NY website: WIP.<br />
