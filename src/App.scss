@@ -1,3 +1,7 @@
+//Colors
+$facebook: #4267b2;
+$github: #171515;
+
 .App {
   text-align: center;
 }
@@ -7,11 +11,25 @@
   color: #61dafb;
 }
 
-footer {
-  background-color: #000;
+.NavBar {
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: red;
+  padding: 14px;
+
+  .Link {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 14px 30px;
+    background-color: blue;
+    text-align: center;
+    &:hover {
+      background-color: green;
+    }
+  }
 }
 
 body {
@@ -26,7 +44,25 @@ body {
   }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+footer {
+  background-color: gray;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .Facebook {
+    color: white;
+
+    &:hover {
+      color: $facebook;
+    }
+  }
+
+  .GitHub {
+    color: white;
+
+    &:hover {
+      color: $github;
+    }
+  }
 }

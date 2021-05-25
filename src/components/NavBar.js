@@ -2,12 +2,10 @@ import { Link } from 'react-router-dom';
 
 function NavBar() {
     return (
-        <header>
-            <ul>
-                <li><Link to='/'>Home</Link></li>
-                <li><Link to='/about'>About</Link></li>
-                <li><Link to = '/contact'>Contact Us</Link></li>
-            </ul>
+        <header className="NavBar">
+            <Link to='/' className="Link">Home</Link>
+            <Link to='/about' className="Link">About</Link>
+            <Link to = '/contact' className="Link">Contact Us</Link>
         </header>
     );
 }
