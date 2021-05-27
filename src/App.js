@@ -4,6 +4,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import LangSwitch from './components/LangSwitch';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path='/contact' component={Contact} />
       </Switch>
+      <LangSwitch />
       <Footer />
     </Router>
   );

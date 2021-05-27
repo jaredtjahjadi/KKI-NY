@@ -11,41 +11,59 @@ $github: #171515;
   color: #61dafb;
 }
 
-.NavBar {
-  text-align: center;
+header {
+  text-align: left;
   position: sticky;
   top: 0;
   width: 100%;
+  height: 50px;
   background-color: red;
-  padding: 14px;
 
   .Link {
+    display: inline-block;
     color: black;
     font-weight: bold;
     text-decoration: none;
-    padding: 14px 30px;
-    background-color: blue;
+    padding: 0px 10px;
+    height: 50px;
+    margin: 4px 0px;
     text-align: center;
+    vertical-align: middle;
     &:hover {
-      background-color: green;
+      background-color: blue;
     }
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
   }
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   .content {
+    margin: 0 auto;
+    max-width: 80%;
     text-align: center;
+    padding: 5px 0px;
+  }
+
+  .LangSwitch {
+    background-color: darkgray;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 5px;
+    padding: 5px;
   }
 }
 
 footer {
-  background-color: gray;
+  background-color:lightgray;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
