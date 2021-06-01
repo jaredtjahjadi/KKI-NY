@@ -1,5 +1,5 @@
 function Contact() {
-    document.title = "Contact Us";
+    document.title = "Contact Us | Indonesian Catholic Community - NY";
     return (
         <div className="content">
             Resurrection-Ascension Church<br />

@@ -1,7 +1,5 @@
 import './App.scss';
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
+import { Home, About, Contact, YouthGroup } from './index';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import LangSwitch from './components/LangSwitch';
@@ -14,6 +12,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
+        <Route exact path="/youthgroup" component={YouthGroup} />
         <Route exact path='/contact' component={Contact} />
       </Switch>
       <LangSwitch />

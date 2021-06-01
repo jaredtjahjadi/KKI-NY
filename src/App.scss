@@ -1,42 +1,25 @@
-//Colors
+//Colors for socials in footer
 $facebook: #4267b2;
 $github: #171515;
 
-.App {
-  text-align: center;
-}
-
-
-.App-link {
-  color: #61dafb;
-}
-
 header {
-  text-align: left;
   position: sticky;
   top: 0;
   width: 100%;
-  height: 50px;
+  float: left;
   background-color: red;
 
   .Link {
     display: inline-block;
-    color: black;
-    font-weight: bold;
     text-decoration: none;
-    padding: 0px 10px;
-    height: 50px;
-    margin: 4px 0px;
-    text-align: center;
-    vertical-align: middle;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    
+    //Applies when the user hovers over a navbar element
     &:hover {
       background-color: blue;
     }
-  }
-
-  img {
-    width: 50px;
-    height: 50px;
   }
 }
 

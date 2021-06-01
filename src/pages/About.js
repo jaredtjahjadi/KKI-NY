@@ -1,5 +1,5 @@
 function About() {
-    document.title = "About";
+    document.title = "About | Indonesian Catholic Community - NY";
     return (
         <>
             <div className="content">
