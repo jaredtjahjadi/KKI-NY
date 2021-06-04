@@ -15,6 +15,7 @@ header {
     color: white;
     font-weight: bold;
     padding: 5px 10px;
+    border-right: 1px solid white;
     
     //Applies when the user hovers over a navbar element
     &:hover {
@@ -46,6 +47,7 @@ body {
 }
 
 footer {
+  width: 100%;
   background-color:lightgray;
   text-align: center;
   padding-top: 20px;

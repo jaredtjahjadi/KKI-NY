@@ -1,8 +1,8 @@
 function LangSwitch() {
     return (
-        <button className="LangSwitch">
-            Language Switcher (WIP)
-        </button>
+        <div className="LangSwitch">
+            <button>Language Switcher (WIP)</button>
+        </div>
     );
 }
 
