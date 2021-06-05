@@ -5,7 +5,7 @@ function NavBar() {
         <header>
             <Link to='/' className="Link">Home</Link>
             <Link to='/about' className="Link">About</Link>
-            <Link to='/youthgroup' className="Link">Youth Group</Link>
+            <Link to='/activities' className="Link">Activities</Link>
             <Link to = '/contact' className="Link">Contact Us</Link>
         </header>
     );

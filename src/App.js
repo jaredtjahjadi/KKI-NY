@@ -1,9 +1,10 @@
 import './App.scss';
-import { Home, About, Contact, YouthGroup } from './index';
+import { Home, About, Contact, Activities } from './index';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import LangSwitch from './components/LangSwitch';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Suspense } from 'react';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
-        <Route exact path="/youthgroup" component={YouthGroup} />
+        <Route exact path="/activities" component={Activities} />
         <Route exact path='/contact' component={Contact} />
       </Switch>
       <LangSwitch />
@@ -21,4 +22,10 @@ function App() {
   );
 }
 
-export default App;
+export default function WrappedApp() {
+  return (
+    <Suspense fallback="loading">
+      <App />
+    </Suspense>
+  )
+};

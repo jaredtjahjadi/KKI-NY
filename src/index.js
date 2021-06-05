@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import './App.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './i18n';
 
+//Import and export pages
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import YouthGroup from './pages/YouthGroup';
-export { Home, About, Contact, YouthGroup }
+import Activities from './pages/Activities';
+export { Home, About, Contact, Activities }
 
 ReactDOM.render(
     <React.StrictMode>

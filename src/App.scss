@@ -36,13 +36,22 @@ body {
     padding: 5px 0px;
   }
 
-  .LangSwitch {
+  .LanguageSwitcher {
     background-color: darkgray;
     position: fixed;
     bottom: 0px;
     right: 0px;
     margin: 5px;
-    padding: 5px;
+    border: none;
+    background-color: white;
+    color: black;
+    transition-duration: 0.4s;
+
+      &:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+      }
   }
 }
 
@@ -55,6 +64,7 @@ footer {
 
   .Facebook {
     color: white;
+    transition-duration: 0.4s;
 
     &:hover {
       color: $facebook;
@@ -63,6 +73,7 @@ footer {
 
   .GitHub {
     color: white;
+    transition-duration: 0.4s;
 
     &:hover {
       color: $github;
