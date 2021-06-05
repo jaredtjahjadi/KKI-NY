@@ -1,14 +1,13 @@
 import './App.scss';
-import { Home, About, Contact, Activities } from './index';
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
-import LangSwitch from './components/LangSwitch';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Home, About, Contact, Activities } from './index'; //Page imports
+import { Header, NavBar, LanguageSwitcher, Footer } from './index'; //Component imports
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; //Allows the website to have multiple pages
 import { Suspense } from 'react';
 
 function App() {
   return (
     <Router>
+      <Header />
       <NavBar />
       <Switch>
         <Route exact path="/" component={Home} />
@@ -16,7 +15,7 @@ function App() {
         <Route exact path="/activities" component={Activities} />
         <Route exact path='/contact' component={Contact} />
       </Switch>
-      <LangSwitch />
+      <LanguageSwitcher />
       <Footer />
     </Router>
   );

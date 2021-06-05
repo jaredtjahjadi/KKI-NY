@@ -1,13 +1,11 @@
 import { useTranslation } from 'react-i18next';
-import logo from '../assets/logo.png';
 
 function Home() {
   document.title = "Home | Indonesian Catholic Community - NY";
   const { t } = useTranslation();
   return (
     <div className="content">
-        <img src={logo} alt="KKI-NY logo" title="KKI-NY logo" /><br />
-        {t('welcome.test')}<br />
+        {t('welcome')}<br />
         Website for Indonesian Catholic Community - NY: WIP.<br />
         Situs web untuk Keluarga Katolik Indonesia New York (KKI-NY) sedang dalam proses.<br />
         KKI NY adalah singkatan dari Keluarga Katolik Indonesia di New York. Di dalam wadah ini berkumpul masyarakat Katolik Indonesia yang bermukim di kota New York dan sekitarnya untuk bersama-sama mengembangkan tali persaudaraan dan keimanan.<br />

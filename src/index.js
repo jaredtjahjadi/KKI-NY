@@ -5,12 +5,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './i18n';
 
-//Import and export pages
+//Import pages
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Activities from './pages/Activities';
-export { Home, About, Contact, Activities }
+
+//Import components
+import Header from './components/Header';
+import NavBar from './components/NavBar';
+import LanguageSwitcher from './components/LanguageSwitcher';
+import Footer from './components/Footer';
+
+export { Home, About, Contact, Activities }; //Export pages
+export { Header, NavBar, LanguageSwitcher, Footer }; //Export components
 
 ReactDOM.render(
     <React.StrictMode>

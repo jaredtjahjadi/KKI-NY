@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 function NavBar() {
+    const { t } = useTranslation();
     return (
-        <header>
-            <Link to='/' className="Link">Home</Link>
-            <Link to='/about' className="Link">About</Link>
-            <Link to='/activities' className="Link">Activities</Link>
-            <Link to = '/contact' className="Link">Contact Us</Link>
-        </header>
+        <div className="NavBar">
+            <Link to='/' className="Link">{t('home')}</Link>
+            <Link to='/about' className="Link">{t("about")}</Link>
+            <Link to='/activities' className="Link">{t("activities")}</Link>
+            <Link to='/contact' className="Link">{t("contact")}</Link>
+        </div>
     );
 }
 

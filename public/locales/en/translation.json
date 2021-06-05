@@ -1,5 +1,9 @@
 {
-    "welcome": {
-        "test": "Welcome!"
-    }
+    "welcome": "Welcome to the Indonesian Catholic Community NY website!",
+    "home": "Home",
+    "about": "About",
+    "activities": "Activities",
+    "contact": "Contact Us",
+    "youthgroup": "Youth Group",
+    "rosary": "Rosary"
 }

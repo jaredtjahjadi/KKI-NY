@@ -1,5 +1,9 @@
 {
-    "welcome": {
-        "test": "Selamat datang!"
-    }
+    "welcome": "Selamat datang di situs web Keluarga Katolik Indonesia New York (KKI-NY)!",
+    "home": "Beranda",
+    "about": "Tentang",
+    "activities": "Kegiatan",
+    "contact": "Hubungi Kami",
+    "youthgroup": "OMK",
+    "rosary": "Rosario"
 }
