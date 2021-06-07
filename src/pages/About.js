@@ -1,11 +1,27 @@
+import { useTranslation } from 'react-i18next';
+
 function About() {
+    const { t } = useTranslation();
     document.title = "About | Indonesian Catholic Community - NY";
     return (
         <>
             <div className="content">
-                KKI NY adalah singkatan dari Keluarga Katolik Indonesia di New York. Di dalam wadah ini berkumpul masyarakat Katolik Indonesia yang bermukim di kota New York dan sekitarnya untuk bersama-sama mengembangkan tali persaudaraan dan keimanan.<br />
-                Dipelopori oleh beberapa keluarga di tahun 1985, organisasi ini mengadakan misa kudus dari rumah ke rumah para anggotanya. Kini jumlah anggota dari KKI NY lebih dari 400 orang. Kegiatan yang dilakukan secara rutin adalah Misa Kudus bersama setiap minggu kedua dan keempat, persekutuan doa, doa rosario, KTM/Komunitas Tritunggal Mahakudus dan beberapa macam kegiatan yang lain.<br />
-                KKI NY merupakan organisasi resmi dibawah naungan CMO (Catholic Migration Office) di Keuskupan Brooklyn yang membawahi 27 kerasulan dari berbagai negara di dunia.
+                {t('about.p1')}<br /><br />
+                {t('about.p2')}<br /><br />
+                {t('about.p3')}<br /><br />
+                {t('about.p4')}<br /><br />
+                {t('about.p5')}<br /><br />
+                {t('about.p6')}<br /><br />
+                {t('about.p7')}<br /><br />
+                {t('about.p8')}<br /><br />
+                {t('about.p9')}<br /><br />
+                {t('about.p10')}<br /><br />
+                {t('about.p11')}<br /><br />
+                {t('about.p12')}<br /><br />
+                {t('about.p13')}<br /><br />
+                {t('about.p14')}<br /><br />
+                {t('about.p15')}<br /><br />
+                {t('about.p16')}<br /><br />
             </div>
         </>
     );

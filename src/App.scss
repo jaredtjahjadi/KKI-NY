@@ -18,10 +18,11 @@ body {
 
   .NavBar {
     width: 100%;
-    background-color: red;
+    background-color: black;
     position: sticky;
     top: 0;
     text-align: center;
+
     .Link {
       display: inline-block;
       text-decoration: none; //No underlines for links
@@ -31,9 +32,13 @@ body {
       border-left: 1px solid white;
       border-right: 1px solid white;
       transition-duration: 0.4s;
+
       &:hover {
-        background-color: blue;
+        background-color: red;
       }
+    }
+    .active {
+      background-color: gray;
     }
   }
 
