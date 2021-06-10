@@ -26,7 +26,7 @@ body {
     .Link {
       display: inline-block;
       text-decoration: none; //No underlines for links
-      padding: 5px 20px;
+      padding: 5px 40px;
       color: white;
       font-weight: bold;
       border-left: 1px solid white;
@@ -46,7 +46,7 @@ body {
     margin: 0 auto;
     max-width: 80%;
     text-align: center;
-    padding: 5px 0px;
+    padding: 10px 0px;
   }
 
   .LanguageSwitcher {
@@ -64,35 +64,45 @@ body {
     opacity: 0.6;
     transition-duration: 0.4s;
 
-      &:hover {
-        cursor: pointer;
-        opacity: 1;
-      }
+    //Makes flag icon opaque and turns mouse into pointer on hover
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
   }
 }
 
 footer {
   width: 100%;
-  background-color:lightgray;
+  background-color: lightgray;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0px;
 
+  .column {
+    float: left;
+    width: 50%;
+  }
+
+  //Makes the columns stack onto each other if the width of the screen is less than 600 pixels
+  @media screen and (max-width: 600px) { .column { width: 100%; } }
+
+  //Background color does not display correctly if floats not cleared
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  //Social icons
   .Facebook {
     color: white;
     transition-duration: 0.4s;
-
-    &:hover {
-      color: $facebook;
-    }
+    &:hover { color: $facebook; }
   }
 
   .GitHub {
     color: white;
     transition-duration: 0.4s;
-
-    &:hover {
-      color: $github;
-    }
+    &:hover { color: $github; }
   }
 }

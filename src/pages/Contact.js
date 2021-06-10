@@ -1,9 +1,20 @@
+import { useTranslation } from 'react-i18next';
 function Contact() {
-    document.title = "Contact Us | Indonesian Catholic Community - NY";
+    const { t } = useTranslation();
+    document.title = `Contact Us | ${t('name')}`;
     return (
         <div className="content">
-            Resurrection-Ascension Church<br />
-            85-26 61st Road, Rego Park, NY 11374<br />
+            <form action="contact.php">
+                <label for="firstname">{t('contact.firstname')}</label>
+                <input type="text" placeholder={t('contact.firstname')} /><br />
+                <label for="lastname">{t('contact.lastname')}</label>
+                <input type="text" placeholder={t('contact.lastname')} /><br />
+                <label for="email">{t('contact.email')}</label>
+                <input type="text" placeholder={t('contact.email')} /><br />
+                <label for="inquiry">{t('contact.inquiry')}</label>
+                <textarea type="text" placeholder="How can we help you?" /><br />
+                <input type="submit" value={t('contact.submit')} />
+            </form>
         </div>
     );
 }

@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 
 function About() {
     const { t } = useTranslation();
-    document.title = "About | Indonesian Catholic Community - NY";
+    document.title = `About | ${t('name')}`;
     return (
         <>
             <div className="content">
@@ -21,7 +21,7 @@ function About() {
                 {t('about.p13')}<br /><br />
                 {t('about.p14')}<br /><br />
                 {t('about.p15')}<br /><br />
-                {t('about.p16')}<br /><br />
+                {t('about.p16')}
             </div>
         </>
     );

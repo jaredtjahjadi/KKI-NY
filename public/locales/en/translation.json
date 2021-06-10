@@ -1,4 +1,5 @@
 {
+    "name": "Indonesian Catholic Community - New York",
     "navbar": {
         "home": "Home",
         "about": "About",
@@ -25,5 +26,12 @@
         "p16": "Finally, after going through a long process and also thanks to the prayerful struggles of all the people of the KKI NY, on February 22, 2015, CMO - Diocese of Brooklyn appointed Father Robert Mirsel, SVD as the Coordinator Father/Parish Priest of the KKI NY."
     },
     "youthgroup": "Youth Group",
-    "rosary": "Rosary"
+    "rosary": "Rosary",
+    "contact": {
+        "firstname": "First Name",
+        "lastname": "Last Name",
+        "email": "Email",
+        "inquiry": "Inquiry",
+        "submit": "Submit"
+    }
 }

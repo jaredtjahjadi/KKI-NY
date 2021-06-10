@@ -1,4 +1,5 @@
 {
+    "name": "Keluarga Katolik Indonesia di New York (KKI-NY)",
     "navbar": {
         "home": "Beranda",
         "about": "Tentang",
@@ -25,5 +26,12 @@
         "p16": "Finally, setelah melalui proses yang panjang dan juga berkat pergumulan doa dari seluruh umat KKI NY, maka pada tanggal 22 Februari 2015, CMO - Diocese of Brooklyn menetapkan Romo Robert Mirsel, SVD sebagai Romo Koordinator/Romo Paroki KKI NY."
     },
     "youthgroup": "OMK",
-    "rosary": "Rosario"
+    "rosary": "Rosario",
+    "contact": {
+        "firstname": "Nama depan",
+        "lastname": "Nama keluarga",
+        "email": "Surel",
+        "inquiry": "Pertanyaan",
+        "submit": "Kirimkan"
+    }
 }

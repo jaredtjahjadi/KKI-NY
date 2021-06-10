@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 function Activities() {
   const { t } = useTranslation();
-  document.title = "Activities | Indonesian Catholic Community - NY";
+  document.title = `Activities | ${t('name')}`;
   return (
     <div className="content">
         <ul>
