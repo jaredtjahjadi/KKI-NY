@@ -6,7 +6,10 @@
         "activities": "Activities",
         "contact": "Contact Us"
     },
-    "welcome": "Welcome to the Indonesian Catholic Community NY website!",
+    "home": {
+        "welcome": "Welcome to the Indonesian Catholic Community NY website!",
+        "wip": "This website is WIP."
+    },
     "about": {
         "p1": "The Indonesian Catholic Community in New York (KKI NY) was founded in 1985 on the idea of Ms. Yvonne Ellong, Mr. F.X. Paul Polax, Mr. Sugiarto Gunadi, Brother David Triestanto, Mrs. Ninik Lapy and Sister Olvie Wuaten who are currently migrating to America. Prior to the emergence of the idea, several Catholic families at that time worshiped together with other Christians in the Ecumenical Church led by the Reverend Alice Hermanus Rampengan. This worship service is based more on a sense of togetherness in one nation, one language and the same Lord Jesus. However, they still miss the Eucharistic Celebration (Holy Mass) which is held in Indonesian.",
         "p2": "With His guidance and will, in January 1985, Ms. Yvonne Ellong, a member of the parish of the Church of St. Michael, Flushing, New York at the time, with Father P. Hardono Hadi, Pr., an Indonesian pastor who served in the church of St. Philip and James, Bronx, New York (they had previously met during a joint service at the Ecumenical Church in 1984) discussed the possibility of holding a Holy Mass (Eucharist Celebration) in Indonesian. From the results of the meeting, an association of Indonesian Catholics was formed which was later approved by the local priest, Msgr. Joseph Greenfelder.",
@@ -25,8 +28,11 @@
         "p15": "On May 26, 2012, the CMO and the church of St. Bartholomew agreed to give KKI NY permission to hold mass on the 4th Sunday, every month.",
         "p16": "Finally, after going through a long process and also thanks to the prayerful struggles of all the people of the KKI NY, on February 22, 2015, CMO - Diocese of Brooklyn appointed Father Robert Mirsel, SVD as the Coordinator Father/Parish Priest of the KKI NY."
     },
-    "youthgroup": "Youth Group",
-    "rosary": "Rosary",
+    "activities": {
+        "youthgroup": "Youth Group",
+        "rosary": "Rosary",
+        "novena": "Novena"
+    },
     "contact": {
         "firstname": "First Name",
         "lastname": "Last Name",

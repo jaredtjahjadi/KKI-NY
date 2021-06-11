@@ -6,7 +6,10 @@
         "activities": "Kegiatan",
         "contact": "Hubungi Kami"
     },
-    "welcome": "Selamat datang di situs web Keluarga Katolik Indonesia New York (KKI-NY)!",
+    "home": {
+        "welcome": "Selamat datang di situs web Keluarga Katolik Indonesia New York (KKI-NY)!",
+        "wip": "Situs web ini sedang dalam proses."
+    },
     "about": {
         "p1": "Keluarga Katolik Indonesia di New York (KKI NY) dicanangkan pada tahun 1985 atas gagasan dari Ibu Yvonne Ellong, Bapak F.X. Paul Polax, Bapak Sugiarto Gunadi, Saudara David Triestanto, Ibu Ninik Lapy dan Saudari Olvie Wuaten yang sedang merantau di negeri Amerika. Sebelum munculnya gagasan tersebut, beberapa keluarga Katolik pada saat itu beribadah bersama-sama dengan umat Kristen lainnya di Gereja Oikumene yang dipimpin oleh Pendeta Alice Hermanus Rampengan. Pelayanan ibadah ini lebih didasarkan pada rasa kebersamaan dalam satu bangsa, satu bahasa dan satu Tuhan Yesus yang sama. Namun demikian, mereka masih sangat merindukan adanya Perayaan Ekaristi (Misa Kudus) yang diselenggarakan dalam bahasa Indonesia.",
         "p2": "Atas petunjuk dan kehendakNya pula, maka pada bulan January 1985, Ibu Yvonne Ellong, anggota paroki Gereja St. Michael, Flushing, New York pada saat itu, bersama Romo P. Hardono Hadi, Pr., seorang pastor Indonesia yang bertugas di gereja St. Philip and James, Bronx, New York (sebelumnya mereka telah bertemu saat ibadah bersama di Gereja Oikumene pada tahun 1984) membicarakan kemungkinan diselenggarakannya Misa Kudus (Perayaan Ekaristi) dalam bahasa Indonesia. Dari hasil pertemuan tersebut, terbentuklah sebuah perkumpulan umat Katolik Indonesia yang kemudian direstui oleh pastor setempat, Msgr. Joseph Greenfelder.",
@@ -25,8 +28,11 @@
         "p15": "Pada 26 Mei 2012, CMO dan gereja St.Bartholomew setuju memberikan ijin KKI NY untuk mengadakan misa pada minggu ke 4, setiap bulannya.",
         "p16": "Finally, setelah melalui proses yang panjang dan juga berkat pergumulan doa dari seluruh umat KKI NY, maka pada tanggal 22 Februari 2015, CMO - Diocese of Brooklyn menetapkan Romo Robert Mirsel, SVD sebagai Romo Koordinator/Romo Paroki KKI NY."
     },
-    "youthgroup": "OMK",
-    "rosary": "Rosario",
+    "activities": {
+        "youthgroup": "OMK",
+        "rosary": "Rosary",
+        "novena": "Novena"
+    },
     "contact": {
         "firstname": "Nama depan",
         "lastname": "Nama keluarga",

@@ -5,8 +5,9 @@ function Activities() {
   return (
     <div className="content">
         <ul>
-          <li>{t('youthgroup')}</li>
-          <li>{t('rosary')}</li>
+          <li>{t('activities.youthgroup')}</li>
+          <li>{t('activities.rosary')}</li>
+          <li>{t('activities.novena')}</li>
         </ul>
     </div>
   );
