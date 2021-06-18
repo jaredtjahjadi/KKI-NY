@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
-function Activities() {
+
+export default function Activities() {
   const { t } = useTranslation();
   document.title = `Activities | ${t('name')}`;
   return (
@@ -12,5 +13,3 @@ function Activities() {
     </div>
   );
 }
-
-export default Activities;

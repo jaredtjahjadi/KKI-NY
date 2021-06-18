@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-function NavBar() {
+export default function NavBar() {
     const { t } = useTranslation();
     return (
         <div className="NavBar">
@@ -12,5 +12,3 @@ function NavBar() {
         </div>
     );
 }
-
-export default NavBar;

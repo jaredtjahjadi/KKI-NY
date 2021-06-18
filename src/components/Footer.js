@@ -1,7 +1,7 @@
 import { Facebook, GitHub } from 'react-feather';
 import '../App.scss';
 
-function Footer() {
+export default function Footer() {
     return (
         <footer>
             <div class="row">
@@ -17,5 +17,3 @@ function Footer() {
         </footer>
     );
 }
-
-export default Footer;

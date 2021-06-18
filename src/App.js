@@ -21,10 +21,5 @@ function App() {
   );
 }
 
-export default function WrappedApp() {
-  return (
-    <Suspense fallback="loading">
-      <App />
-    </Suspense>
-  )
-};
+//Wait for website elements (i.e. English/Indonesian translations) to fully load
+export default function WrappedApp() { return (<Suspense fallback="loading"><App /></Suspense>); };

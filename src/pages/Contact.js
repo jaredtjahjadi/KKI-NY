@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
-function Contact() {
+
+export default function Contact() {
     const { t } = useTranslation();
     document.title = `Contact Us | ${t('name')}`;
     return (
@@ -18,5 +19,3 @@ function Contact() {
         </div>
     );
 }
-
-export default Contact;
