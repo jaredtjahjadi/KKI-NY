@@ -1,39 +1,44 @@
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import nodemailer from 'nodemailer';
-
-function sendMail() {
-    let transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        auth: {
-            user: process.env.EMAIL,
-            pass: process.env.PASS
-        }
-    });
-    var message = {
-        from: `${document.getElementById('email').value}`,
-        to: process.env.EMAIL,
-        subject: "Test",
-        text: `${document.getElementById('inquiry').value}`
-    }
-    transporter.sendMail(message);
-}
 
 export default function Contact() {
+    const [status, setStatus] = useState("Submit");
+    const send = async (e) => {
+        e.preventDefault();
+        setStatus("Sending...");
+        const { name, email, inquiry } = e.target.elements;
+        let details = {
+            name: name.value,
+            email: email.value,
+            inquiry: inquiry.value
+        };
+
+        let response = await fetch("http://localhost:5000/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json;charset=utf-8"
+            },
+            body: JSON.stringify(details)
+        });
+
+        setStatus("Submitted!");
+        let result = await response.json();
+        alert(result.status);
+    }
+
     const { t } = useTranslation();
     document.title = `Contact Us | ${t('name')}`;
 
     return (
         <div className="content">
-            <form>
-                <label for="firstname">{t('contact.firstname')}</label>
-                <input type="text" id="firstname" placeholder={t('contact.firstname')} /><br />
-                <label for="lastname">{t('contact.lastname')}</label>
-                <input type="text" id="lastname" placeholder={t('contact.lastname')} /><br />
+            <form onSubmit={send}>
+                <label for="name">{t('contact.name')}</label>
+                <input type="text" id="name" placeholder={t('contact.name')} required /><br />
                 <label for="email">{t('contact.email')}</label>
-                <input type="text" id="email" placeholder={t('contact.email')} /><br />
+                <input type="text" id="email" placeholder={t('contact.email')} required /><br />
                 <label for="inquiry">{t('contact.inquiry')}</label>
-                <textarea type="text" id="inquiry" placeholder="How can we help you?" /><br />
-                <input type="submit" value={t('contact.submit')} onClick={sendMail} />
+                <textarea type="text" id="inquiry" placeholder="How can we help you?" required /><br />
+                <button type="submit">{status}</button>
             </form>
         </div>
     );

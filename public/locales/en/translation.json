@@ -34,8 +34,7 @@
         "novena": "Novena"
     },
     "contact": {
-        "firstname": "First Name",
-        "lastname": "Last Name",
+        "name": "Name",
         "email": "Email",
         "inquiry": "Inquiry",
         "submit": "Submit"

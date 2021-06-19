@@ -34,8 +34,7 @@
         "novena": "Novena"
     },
     "contact": {
-        "firstname": "Nama depan",
-        "lastname": "Nama keluarga",
+        "name": "Name",
         "email": "Surel",
         "inquiry": "Pertanyaan",
         "submit": "Kirimkan"
