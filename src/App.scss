@@ -41,6 +41,27 @@ body {
       background-color: gray;
     }
   }
+  
+  .slideshow {
+    position: relative;
+  }
+
+  .actions {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 15px;
+      padding-top: 5px;
+    }
+  }
 
   .content {
     margin: 0 auto;
