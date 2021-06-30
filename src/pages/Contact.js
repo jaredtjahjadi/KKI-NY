@@ -27,7 +27,7 @@ export default function Contact() {
     }
 
     const { t } = useTranslation();
-    document.title = `Contact Us | ${t('name')}`;
+    document.title = `${t('pages.contact')} | ${t('name')}`;
 
     return (
         <div className="content">

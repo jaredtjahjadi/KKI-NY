@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function About() {
     const { t } = useTranslation();
-    document.title = `About | ${t('name')}`;
+    document.title = `${t('pages.about')} | ${t('name')}`;
     return (
         <>
             <div className="content">

@@ -1,9 +1,10 @@
 {
     "name": "Keluarga Katolik Indonesia di New York (KKI-NY)",
-    "navbar": {
+    "pages": {
         "home": "Beranda",
         "about": "Tentang",
         "activities": "Kegiatan",
+        "newsletter": "Buletin",
         "contact": "Hubungi Kami"
     },
     "home": {

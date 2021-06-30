@@ -1,9 +1,10 @@
 {
     "name": "Indonesian Catholic Community - New York",
-    "navbar": {
+    "pages": {
         "home": "Home",
         "about": "About",
         "activities": "Activities",
+        "newsletter": "Newsletter",
         "contact": "Contact Us"
     },
     "home": {

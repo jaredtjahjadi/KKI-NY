@@ -3,11 +3,12 @@ import { useTranslation } from 'react-i18next';
 
 export default function Home() {
   const { t } = useTranslation();
-  document.title = `Home | ${t('name')}`;
+  document.title = `${t('pages.home')} | ${t('name')}`;
   return (
     <div>
-      <Slideshow />
+      
       <div className="content">
+        <Slideshow />
         {t('home.welcome')}
         <p style={{fontWeight: 'bold'}}>{t('home.wip')}</p>
         KKI NY adalah singkatan dari Keluarga Katolik Indonesia di New York. Di dalam wadah ini berkumpul masyarakat Katolik Indonesia yang bermukim di kota New York dan sekitarnya untuk bersama-sama mengembangkan tali persaudaraan dan keimanan.<br />

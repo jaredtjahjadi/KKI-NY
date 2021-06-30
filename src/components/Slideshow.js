@@ -7,10 +7,10 @@ export default function Slideshow() {
     const prev = () => {(index === 0) ? setIndex(imgs.length - 1) : setIndex(index - 1)};
     return(
         <div className="slideshow">
-            <img className="main" src={imgs[index]} alt="Pic 1" />
+            <img className="main" src={imgs[index]} alt="Pic" style={{width:'100%'}} />
             <div className="actions">
-                <button onClick={prev}>👈</button>
-                <button onClick={next}>👉</button>
+                <button onClick={prev}>&#10094;</button>
+                <button onClick={next}>&#10095;</button>
             </div>
         </div>
     )

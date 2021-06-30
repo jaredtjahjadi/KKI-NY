@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function Activities() {
   const { t } = useTranslation();
-  document.title = `Activities | ${t('name')}`;
+  document.title = `${t('pages.activities')} | ${t('name')}`;
   return (
     <div className="content">
         <ul>
