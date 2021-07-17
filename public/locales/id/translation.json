@@ -35,9 +35,10 @@
         "novena": "Novena"
     },
     "contact": {
-        "name": "Name",
+        "name": "Nama",
         "email": "Surel",
         "inquiry": "Pertanyaan",
+        "help": "Bagaimana kami dapat membantu Anda?",
         "submit": "Kirimkan"
     }
 }

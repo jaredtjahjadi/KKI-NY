@@ -1,30 +1,32 @@
-const express = require('express');
-const cors = require('cors');
 const nodemailer = require('nodemailer');
-
-const router = express.Router();
-const app = express();
-app.use(cors());
-app.use(express.json());
-app.use("/", router);
-app.listen(5000, () => console.log("Server running"));
-
+const cors = require('cors');
+const express = require('express');
+require('dotenv').config();
+const PORT = process.env.PORT || 5000;
 const transporter = nodemailer.createTransport({
     service: 'gmail',
-    auth: false
-})
+    auth: {
+        user: process.env.REACT_APP_EMAIL,
+        pass: process.env.REACT_APP_PASS
+    }
+});
 
-transporter.verify((e) => e ? console.log(e) : console.log("Ready to send"));
+transporter.verify((err, success) => {console.log(err ? err : "Server ready");});
 
-router.post("/contact", (req, res) => {
-    const name = req.body.name;
-    const email = req.body.email;
-    const inquiry = req.body.inquiry;
-    const mail = {
-        from: name,
-        to: process.env.REACT_APP_EMAIL,
-        subject: "[KKI-NY] New email",
-        html: `<p>${name} <${email}> has sent a message:</p><p>${inquiry}</p>`
-    };
-    transporter.sendMail(mail, (err) => { err ? res.json({status: "ERROR"}) : res.json({status: "Sent!"}); })
+const app = express();
+
+app.post("/send", (req, res, next) => {
+    var name = req.body.name;
+    var email = req.body.email;
+    var message = req.body.message;
+    var mail = {
+        from: `${name} <${email}>`,
+        to: 'jaredtjahjadi@gmail.com',
+        subject: `${name} has sent you a message.`,
+        text: message
+    }
+
+    transporter.sendMail(mail, (err, data) => {
+        res.json(err ? { status: 'fail' } : {status: 'success' });
+    })
 })

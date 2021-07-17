@@ -1,44 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
 //Colors for socials in footer
 $facebook: #4267b2;
 $github: #171515;
 
-body {
+html, body {
   margin: 0 auto;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Helvetica", sans-serif;
   font-size: 20px;
 
-  .Header img {
-    display: block;
-    margin: 0 auto;
-    width: 40%;
-    height: auto;
+  .HomeHeader {
+    width: 100%;
+    height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .NavBar {
+    font-family: 'Lato';
     width: 100%;
-    background-color: black;
     position: sticky;
     top: 0;
     text-align: center;
+    z-index: 1;
 
     .Link {
       display: inline-block;
-      text-decoration: none; //No underlines for links
-      padding: 5px 40px;
+      text-decoration: none;
       color: white;
+      padding: 5px 40px;
       font-weight: bold;
-      border-left: 1px solid white;
-      border-right: 1px solid white;
       transition-duration: 0.4s;
-
-      &:hover {
-        background-color: red;
-      }
-    }
-    .active {
-      background-color: gray;
     }
   }
   

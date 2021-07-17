@@ -17,9 +17,10 @@ import Header from './components/Header';
 import NavBar from './components/NavBar';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import Footer from './components/Footer';
+import HomeHeader from './components/HomeHeader';
 
 export { Home, About, Activities, Newsletter, Contact }; //Export pages
-export { Header, NavBar, LanguageSwitcher, Footer }; //Export components
+export { Header, NavBar, LanguageSwitcher, Footer, HomeHeader }; //Export components
 
 ReactDOM.render(
     <React.StrictMode>

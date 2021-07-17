@@ -38,6 +38,7 @@
         "name": "Name",
         "email": "Email",
         "inquiry": "Inquiry",
+        "help": "How can we help you?",
         "submit": "Submit"
     }
 }
