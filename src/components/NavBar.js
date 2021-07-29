@@ -1,10 +1,11 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 export default function NavBar() {
     const { t } = useTranslation();
+    const NavBar = useLocation().pathname === '/' ? "NavBar1" : "NavBar2";
     return (
-        <div className="NavBar">
+        <div className={NavBar}>
             <NavLink exact activeClassName="active" to='/' className="Link">{t('pages.home')}</NavLink>
             <NavLink activeClassName="active" to='/about' className="Link">{t('pages.about')}</NavLink>
             <NavLink activeClassName="active" to='/activities' className="Link">{t('pages.activities')}</NavLink>
