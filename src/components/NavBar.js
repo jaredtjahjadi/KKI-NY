@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function NavBar() {
     const { t } = useTranslation();
+    //Changes navbar design based on page
     const NavBar = useLocation().pathname === '/' ? "NavBar1" : "NavBar2";
     return (
         <div className={NavBar}>
