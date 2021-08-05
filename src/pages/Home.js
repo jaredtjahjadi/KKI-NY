@@ -1,10 +1,12 @@
 import { useTranslation } from 'react-i18next';
+import HeroImage from '../components/HeroImage';
 
 export default function Home() {
   const { t } = useTranslation();
   document.title = `${t('pages.home')} | ${t('name')}`;
   return (
     <div>
+      <HeroImage />
       <div className="content">
         {t('home.welcome')}
         <p style={{fontWeight: 'bold'}}>{t('home.wip')}</p>

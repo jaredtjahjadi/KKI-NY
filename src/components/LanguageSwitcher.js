@@ -15,5 +15,5 @@ export default function LanguageSwitcher() {
             className="LanguageSwitcher"
             onClick={() => i18n.changeLanguage(checkLanguage ? 'id' : 'en')}
         />
-    )
+    );
 }
