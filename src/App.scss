@@ -4,19 +4,80 @@
 $facebook: #4267b2;
 $github: #171515;
 
+//Styling for navbar and its elements
+nav {
+  position: sticky;
+  font-family: 'Lato';
+  width: 100%;
+  top: 0;
+  text-align: center;
+  z-index: 999;
+  .Link {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 5px 50px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .Links {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    justify-content: end;
+    margin-right: 2rem;
+  }
+
+  .nav-elem {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .Links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+
+    .active {
+      background: #242222;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+  }
+
+  .icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .Link {
+    display: table;
+  }
+}
+
 html, body {
   height: 100%;
   margin: 0 auto;
   font-family: "Helvetica", sans-serif;
   font-size: 20px;
-
-  img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -1;
-  }
 
   .hero-container {
     background: url('/images/pic1.png') center center/cover no-repeat;
@@ -24,48 +85,10 @@ html, body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     box-shadow: index 0 0 0 1000px rgba(0,0,0,0.2);
     object-fit: contains;
-  }
-
-  .NavBar {
-    position: sticky;
-    font-family: 'Lato';
-    width: 100%;
-    top: 0;
-    text-align: center;
-    z-index: 999;
-
-    .Link {
-      display: inline-block;
-      text-decoration: none;
-      color: black;
-      padding: 5px 50px;
-      font-weight: bold;
-      transition-duration: 0.4s;
-    }
-  }
-  
-  .slideshow {
-    position: relative;
-  }
-
-  .actions {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-
-    button {
-      border: none;
-      cursor: pointer;
-      padding: 10px;
-      margin: 5px;
-      border-radius: 15px;
-      padding-top: 5px;
-    }
   }
 
   .content {
